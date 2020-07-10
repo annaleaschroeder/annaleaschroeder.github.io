@@ -26,6 +26,10 @@ main {
     overflow: scroll;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 .heading {
     margin-bottom: 12px;
 }
@@ -39,7 +43,7 @@ nav {
     margin: 5px;
     color:	#35374b;
     background-color:	#c4a5a0;
-    border: #35374b solid 1px;
+    border: #35374b solid 2px;
     padding: 4px;
     border-radius: 5px;
     
@@ -73,6 +77,23 @@ img {
     font-size: 80%;
     margin-top: 10px;
 }
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px; 
+    list-style: none;
+}
+
+.item {
+background-color: #c4a5a0;
+border: 2px solid #35374b;
+border-radius: 5px;
+padding: 4px;
+margin: 4px;
+}
+
 
 /*
 .header {
