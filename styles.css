@@ -7,15 +7,19 @@ body {
     padding: 20px;
     margin: 0;
     display: grid;
-    grid-template-rows: 120px auto 48px;
+    grid-template-rows: 120px auto 40px;
     height: 100vh;
     font-family: 'Ubuntu Condensed', sans-serif;
     background-color:#c4a5a0;
     text-align: center;
 }
 
-header, main, footer {
+main {
     background-color: white;
+}
+
+header, footer {
+    background-color: #c9ccd1;
 }
 
 main {
@@ -44,6 +48,7 @@ nav {
 img {
     border-radius: 15px;
 }
+
 .portrait {
     width: 50%;
     height: 50%;
@@ -56,13 +61,17 @@ img {
 
 .social {
     display: flex;
-    justify-content: space-between;
-    width: 50px;
-    height: 50px;
+    justify-content: space-evenly;
 }
 
-.logo {
-    
+.logos {
+    height: 50px;
+    width: 50px;
+}
+
+.contact {
+    font-size: 80%;
+    margin-top: 10px;
 }
 
 /*
