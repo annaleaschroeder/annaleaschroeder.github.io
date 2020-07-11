@@ -96,15 +96,26 @@ img {
     padding: 0;
 }
 
-
 .item {
+/*display: flex;
+align-content: center;*/
+display: grid;
 background-color: #c4a5a0;
 border: 2px solid #35374b;
 border-radius: 5px;
 padding: 4px;
 margin: 4px;
+font-size: 100%;
+justify-content: center;
+align-items: center;
 }
 
+.bio {
+border: 2px solid #35374b;
+border-radius: 5px;
+padding: 4px;
+margin: 4px;
+}
 
 /*
 .header {
