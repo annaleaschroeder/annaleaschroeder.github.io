@@ -171,6 +171,81 @@ margin: 4px;
 }
 
 /*
+a {
+display: block;
+}*/
+
+main {
+    background-color: white;
+    overflow: scroll;
+}
+
+
+.introduction {
+    grid-area: introduction;
+}
+
+.photo {
+    grid-area: photo;
+}
+
+.some {
+    grid-area: some;
+}
+
+.address {
+    grid-area: address;
+}
+
+.skill {
+    grid-area: skill;
+}
+
+.hobbies {
+    grid-area: hobbies;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.lebenslauf {
+    grid-area: cv;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto); 
+    grid-template-areas: 
+    "introduction"
+    "photo"
+    "some"
+    "address"
+    "skill"
+    "hobbies"
+    "bio"
+    "cv"
+}
+
+
+
+@media (min-width: 600px) {
+   .resume {
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+    "photo bio"
+    "photo some"
+    "introduction  address"
+    "skill cv"
+    "hobbies cv"
+   }
+
+}
+
+
+
+/*
 .header {
     display: flex; 
     text-align: center;
@@ -200,11 +275,3 @@ justify-content: space-around;
     gap: 20px;
     margin: 20px;
 } */
-
-
-
-
-
-a {
-display: block;
-}
