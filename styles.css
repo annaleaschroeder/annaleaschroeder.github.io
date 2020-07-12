@@ -235,7 +235,7 @@ main {
     grid-template-columns: repeat(2, auto);
     grid-template-areas:
     "photo bio"
-    "photo some"
+    " some"
     "introduction  address"
     "skill cv"
     "hobbies cv"
@@ -275,3 +275,5 @@ justify-content: space-around;
     gap: 20px;
     margin: 20px;
 } */
+
+Test
