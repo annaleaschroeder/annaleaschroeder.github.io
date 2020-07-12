@@ -17,22 +17,9 @@ body {
 main {
     background-color: white;
     overflow: scroll;
+    margin-top: 40px;
 }
 
-
-.resume {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "introduction"
-    "photo"
-    "some"
-    "address"
-    "skill"
-    "hobbies"
-    "bio"
-    "cv"
-}
 
 header, footer {
     background-color: #c9ccd1;
@@ -133,12 +120,6 @@ justify-content: center;
 align-items: center;
 }
 
-.bio {
-border: 2px solid #35374b;
-border-radius: 5px;
-padding: 4px;
-margin: 4px;
-}
 
 .cv {
     display: grid;
@@ -170,11 +151,6 @@ margin: 4px;
     grid-row: span 2; 
 }
 
-/*
-a {
-display: block;
-}*/
-
 main {
     background-color: white;
     overflow: scroll;
@@ -187,36 +163,86 @@ main {
 
 .photo {
     grid-area: photo;
+    border: transparent solid 2px;
+    border-radius: 5px; 
+    padding: 4px;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;    
+
 }
 
 .some {
     grid-area: some;
+    border: 2px solid #35374b;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .address {
     grid-area: address;
+    border: 2px solid #35374b;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .skill {
     grid-area: skill;
+    border: 2px solid #35374b;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .hobbies {
     grid-area: hobbies;
+    border: 2px solid #35374b;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .bio {
     grid-area: bio;
+    border: 2px solid #35374b;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .lebenslauf {
     grid-area: cv;
+    border: 2px solid #35374b;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .resume {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, auto); 
+    align-content: center;
     grid-template-areas: 
     "introduction"
     "photo"
@@ -229,14 +255,15 @@ main {
 }
 
 
-
 @media (min-width: 600px) {
    .resume {
     grid-template-columns: repeat(2, auto);
+    grid-gap: 8px;
     grid-template-areas:
-    "photo bio"
-    "photo some"
-    "introduction  address"
+    "introduction introduction"
+    "photo photo"
+    "some bio"
+    "address bio"
     "skill cv"
     "hobbies cv"
    }
