@@ -129,7 +129,7 @@ align-items: center;
     border: 2px solid #35374b;
     border-radius: 5px;
     padding: 4px;
-    background-color: #c4a5a0;
+    background-color: #c9ccd1;
     margin: 4px;
 }
 
@@ -226,9 +226,6 @@ main {
     border: 2px solid #35374b;
     border-radius: 5px; 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     flex-direction: column;
 }
 
@@ -273,8 +270,8 @@ main {
      "introduction introduction introduction"
      "photo photo some"
      "photo photo address"
-     "bio cv cv"
-     "skill cv cv "
+     "skill cv cv"
+     "bio cv cv "
      "hobbies cv cv"
     }
  
