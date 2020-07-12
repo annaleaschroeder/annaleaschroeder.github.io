@@ -16,6 +16,7 @@ body {
 
 main {
     background-color: white;
+    overflow: scroll;
 }
 
 header, footer {
@@ -23,7 +24,11 @@ header, footer {
 }
 
 main {
+    background-color: white;
     overflow: scroll;
+   /* display: grid;
+    grid-template-rows: repeat(10; 1fr);
+    grid-template-rows: 1fr;*/
 }
 
 h1, h2 {
