@@ -17,17 +17,11 @@ body {
 main {
     background-color: white;
     overflow: scroll;
-    margin-top: 40px;
 }
 
 
 header, footer {
     background-color: #c9ccd1;
-}
-
-main {
-    background-color: white;
-    overflow: scroll;
 }
 
 
@@ -271,6 +265,20 @@ main {
 }
 
 
+@media (min-width: 1000px) {
+    .resume {
+     grid-template-columns: repeat(3, auto);
+     grid-gap: 8px;
+     grid-template-areas:
+     "introduction introduction introduction"
+     "photo photo some"
+     "photo photo address"
+     "bio cv cv"
+     "skill cv cv "
+     "hobbies cv cv"
+    }
+ 
+ }
 
 /*
 .header {
